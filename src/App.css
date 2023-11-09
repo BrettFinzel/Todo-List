@@ -24,8 +24,130 @@
   color: white;
 }
 
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #31c2c0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+input {
+  width: 300px;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input:hover {
+  border-width: 2px;
+  border-color:#282c34;
+}
+
+
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: padding 0.2s; /* Add a smooth transition effect for padding */
+}
+
+button:hover {
+  padding: 12px 22px; /* Increase the padding on hover */
+}
+
+
+/* Style the remove button */
+.todo-item button {
+  padding: 5px 10px; /* Smaller button size */
+  background-color: #ff0000; /* Red color for the "X" button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: padding 0.2s; /* Add a smooth transition effect for padding */
+}
+
+.todo-item button:hover {
+  padding: 7px 12px; /* Increase the padding on hover */
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+li:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+li:hover {
+  background-color: #007bff;
+  color: #fff;
+  border-width: 2px;
+}
+
 .App-link {
   color: #61dafb;
+}
+h1 {
+  font-size: 24px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.todo-item:hover {
+  border-width: 2px;
+}
+
+.todo-item span {
+  flex: 1; /* Takes up the remaining space */
+}
+
+/* Style the remove button */
+.todo-item button {
+  padding: 5px 10px; /* Smaller button size */
+  background-color: #ff0000; /* Red color for the "X" button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.todo-item button:hover {
+  background-color: #aa0000; /* Darker red on hover */
 }
 
 @keyframes App-logo-spin {
